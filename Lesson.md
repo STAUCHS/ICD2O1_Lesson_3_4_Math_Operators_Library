@@ -47,7 +47,7 @@ NOTE: If there is a float in the calculation, the result is ALWAYS a <i>float</i
 | Operation       | Output Type | Example      | Result |
 | --------------- | ----------- | ------------ | ------ |
 | float `/` float | float       | `10.0 / 2.0` | `5.0`  |
-| int `/` int     | float       | `10 / 2`     | `5`    |
+| int `/` int     | float       | `10 / 2`     | `5.0`  |
 | float `/` int   | float       | `10.0 / 2`   | `5.0`  |
 
 <span style="color:red">
@@ -60,13 +60,13 @@ NOTE: Division ALWAYS results in a <i>float</i>
 Just like in math, certain operators will have precedence over other operators. In math, we more commonly know it as order of operations. In Computer Science, you may hear the words `Operator Precedence`. This is a set of rules that determines when different pieces of an expression get evaluated.
 
 #### Order of Operations
-| Order                                | Example                   |
-| ------------------------------------ | ------------------------- |
-| 1. Brackets                          | `(...)`                   |
-| 2. Exponent                          | `x ** y`                  |
-| 3. Negation                          | `-x`                      |
-| 4. Multiplication, Division, Modulus | `x * y`, `x / y`, `x % y` |
-| 5. Addition, Subtraction             | `x + y`, `x - y`          |
+| Order                                                | Example                             |
+| ---------------------------------------------------- | ----------------------------------- |
+| 1. Brackets                                          | `(...)`                             |
+| 2. Exponent                                          | `x ** y`                            |
+| 3. Negation                                          | `-x`                                |
+| 4. Multiplication, Division, Floor Division, Modulus | `x * y`, `x / y`, `x // y`, `x % y` |
+| 5. Addition, Subtraction                             | `x + y`, `x - y`                    |
 
 <span style="color:red">
 <b>
@@ -112,6 +112,6 @@ There are many functions that we can use from the math library, but many of them
 ## Other Useful Functions (Built into Python)
 | Built-in Function                   | What does it do?                                            | Example            | Result |
 | ----------------------------------- | ----------------------------------------------------------- | ------------------ | ------ |
-| `round(<number>)`                   | Rounds a `<number>` to the nearest whole float number       | `round(3.837)`     | `3.0`  |
+| `round(<number>)`                   | Rounds a `<number>` to the nearest whole float number       | `round(3.837)`     | `4.0`  |
 | `round(<number>, <decimal_places>)` | Rounds a `<number>` to the number of `<decimal_places>`     | `round(3.837, 2)`  | `3.84` |
 | `abs(<number>)`                     | Takes the absolute value of a `<number>` (make it positive) | `abs(-30)`         | `30`   |
