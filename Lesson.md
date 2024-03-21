@@ -107,7 +107,7 @@ There are many functions that we can use from the math library, but many of them
 |                |                                                             | `math.sqrt(9.0)` | `3.0`              | `float`     |
 |                |                                                             | `math.sqrt(5)`   | `2.23606797749979` | `float`     |
 |                |                                                             | `math.sqrt(5.0)` | `2.23606797749979` | `float`     |
-| `math.pi()`    | Returns the value of pi. There is no value in the brackets  | `math.pi()`      | `3.141592653589793`| `float`     |
+| `math.pi`    | Returns the value of pi. There is no value in the brackets    | `math.pi  `      | `3.141592653589793`| `float`     |
 
 ## Other Useful Functions (Built into Python)
 | Built-in Function                   | What does it do?                                            | Example            | Result |
